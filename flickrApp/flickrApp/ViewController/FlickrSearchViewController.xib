@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FlickrSearchViewController" customModule="flickrApp" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="eg1-QW-yhe" id="OD1-On-Zsq"/>
+                <outlet property="searchBar" destination="p0s-bo-mg7" id="bc1-xB-bSU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="p0s-bo-mg7">
+                    <rect key="frame" x="0.0" y="30" width="375" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="eg1-QW-yhe">
+                    <rect key="frame" x="0.0" y="96" width="375" height="571"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="h1b-cW-pWg">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eg1-QW-yhe" secondAttribute="bottom" id="1bo-sb-Aeh"/>
+                <constraint firstItem="eg1-QW-yhe" firstAttribute="top" secondItem="p0s-bo-mg7" secondAttribute="bottom" constant="10" id="Btx-Fb-1aa"/>
+                <constraint firstItem="p0s-bo-mg7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="NA0-Vq-lUX"/>
+                <constraint firstItem="p0s-bo-mg7" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="RaD-os-23i"/>
+                <constraint firstItem="eg1-QW-yhe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Y7e-gj-NX0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eg1-QW-yhe" secondAttribute="trailing" id="bPP-nv-BuU"/>
+                <constraint firstItem="p0s-bo-mg7" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="f1S-nb-fEH"/>
+                <constraint firstItem="p0s-bo-mg7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="fjF-m8-Xga"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
